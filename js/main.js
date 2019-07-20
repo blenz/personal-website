@@ -1,4 +1,4 @@
-$('#about-link').click(function(e) {
+$('#about-link').click(e => {
   e.preventDefault();
   $('html, body').animate(
     {
@@ -8,7 +8,7 @@ $('#about-link').click(function(e) {
   );
 });
 
-$('#projects-link').click(function(e) {
+$('#projects-link').click(e => {
   e.preventDefault();
   $('html, body').animate(
     {
@@ -18,7 +18,7 @@ $('#projects-link').click(function(e) {
   );
 });
 
-$('#contact-link').click(function(e) {
+$('#contact-link').click(e => {
   e.preventDefault();
   $('html, body').animate(
     {
