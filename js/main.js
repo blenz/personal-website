@@ -36,11 +36,13 @@ $.getJSON('js/projects.json', projects => {
     $('#projects > div.row:last-child').append(
       `<div class="container col-lg-6">
         <h3>${p.name}</h3>
+        <a ${p.link ? `href="${p.link}"` : ''}>
         <img 
           src="${p.img.src}"
           height="${p.img.height}"
           width="${p.img.width}"
         >
+       </a>
         <p class="text-muted">
           ${p.body}
         </p>
