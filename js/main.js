@@ -34,7 +34,7 @@ $.getJSON('js/projects.json', projects => {
     if (i % 2 === 0) $('#projects').append("<div class='row'></div>");
 
     $('#projects > div.row:last-child').append(
-      `<div class="container col-lg-6">
+      `<div class="col-sm-12 col-lg-6">
         <h3>${p.name}</h3>
         <a ${p.link ? `href="${p.link}"` : ''}>
         <img 
