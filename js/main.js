@@ -35,8 +35,8 @@ $.getJSON('js/projects.json', projects => {
 
     $('#projects > div.row:last-child').append(
       `<div class="container col-lg-6">
-        <h3 class="card-title">${p.name}</h5>
-        <img class="card-img-top" 
+        <h3>${p.name}</h3>
+        <img 
           src="${p.img.src}"
           height="${p.img.height}"
           width="${p.img.width}"
