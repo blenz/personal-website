@@ -1,10 +1,31 @@
 [
   {
+    "name": "Events App (In Development)",
+    "img": { "src": "img/react-firebase.png", "height": 200, "width": 400 },
+    "link": "https://github.com/blenz/events-app",
+    "body": "This project uses React, Firebase, and Google Maps API to offer users a place where they can create, view, comment, and join other events they are interested in.",
+    "tags": [
+      "React",
+      "Firebase",
+      "Google Maps API",
+      "Kubernetes",
+      "CI/CD",
+      "CircleCI"
+    ]
+  },
+  {
     "name": "Dating App",
     "img": { "src": "img/angular.png", "height": 200, "width": 200 },
     "link": "https://dating-app.brettlenz.com/",
     "body": "This project was developed using AngularJs and .NET Core. I wanted to build a fullstack web application to get more familar with these frameworks and a dating up is. Additionally, I wanted learn how to deploy and maintain a kubernetes cluster and set up CI/CD using CircleCi.",
-    "tags": [".NET Core", "MySQL", "AngularJs", "Kubernetes", "CI/CD"]
+    "tags": [
+      ".NET Core",
+      "MySQL",
+      "AngularJs",
+      "Kubernetes",
+      "CI/CD",
+      "CircleCI"
+    ]
   },
   {
     "name": "Ecommerce Website",
