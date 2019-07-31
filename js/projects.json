@@ -17,7 +17,7 @@
     "name": "Dating App",
     "img": { "src": "img/angular.png", "height": 200, "width": 200 },
     "link": "https://dating-app.brettlenz.com/",
-    "body": "This project was developed using AngularJs and .NET Core. I wanted to build a fullstack web application to get more familar with these frameworks and a dating up is. Additionally, I wanted learn how to deploy and maintain a kubernetes cluster and set up CI/CD using CircleCi.",
+    "body": "This project was developed using AngularJs and .NET Core. I wanted to build a fullstack web application to get more familar with these frameworks and a dating up is. Additionally, I learned how to deploy and maintain a kubernetes cluster and set up CI/CD using CircleCI.",
     "tags": [
       ".NET Core",
       "MySQL",
