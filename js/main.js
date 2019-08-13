@@ -46,8 +46,18 @@ $.getJSON('js/projects.json', projects => {
         <p class="text-muted">
           ${p.body}
         </p>
+        ${
+          p.link && !p.link.includes('github.com')
+            ? "<span class='label label-success'>Deployed</span>"
+            : ''
+        }
+        ${
+          p.link && p.link.includes('github.com')
+            ? "<span class='label label-primary'>Github</span>"
+            : ''
+        }
          ${p.tags
-           .map(t => `<span class="label label-primary">${t}</span>`)
+           .map(t => `<span class="label label-info">${t}</span>`)
            .join('\n')}
       </div>`
     );
