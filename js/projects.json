@@ -3,9 +3,10 @@
     "name": "Events App (In Development)",
     "img": { "src": "img/react-firebase.png", "height": 200, "width": 400 },
     "link": "https://github.com/blenz/events-app",
-    "body": "This project uses React, Firebase, and Google Maps API to offer users a place where they can create, view, comment, and join other events they are interested in.",
+    "body": "This project uses React, Redux, Firebase, and Google Maps API to offer users a place where they can create, view, comment, and join other events they are interested in. The goal of this project was to increase my skills with React / Redux, CI / CD, and Kubernetes.",
     "tags": [
       "React",
+      "Redux",
       "Firebase",
       "Google Maps API",
       "Kubernetes",
