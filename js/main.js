@@ -1,5 +1,13 @@
 const projects = [
   {
+    name: 'TTD Project',
+    img: { src: 'img/tdd-calculator.png', height: 200, width: 300 },
+    links: ['https://github.com/blenz/TDDCalculator'],
+    body:
+      'The goal of this project was to use TDD to build a calculator that would accept a string and calculate the sum by parsing out the valid numbers from the string. Each requirement of the project built upon existing requirements so unit tests were essential to ensure existing functionality worked while new features were added. This project was a great example of why having solid unit tests are crucial for building robust software that will scale.',
+    tags: ['C#', 'NUnit', 'TDD', 'Unit Testing']
+  },
+  {
     name: 'Events App (In Development)',
     img: { src: 'img/react-firebase.png', height: 200, width: 400 },
     links: ['https://github.com/blenz/events-app'],
