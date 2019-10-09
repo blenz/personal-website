@@ -1,15 +1,15 @@
 const projects = [
   {
-    name: 'TTD Project',
-    img: { src: 'img/tdd-calculator.png', height: 200, width: 300 },
+    title: 'TTD Project',
+    img: { src: 'img/tdd-calculator.png', height: 100, width: 200 },
     links: ['https://github.com/blenz/TDDCalculator'],
     body:
       'The goal of this project was to use TDD to build a calculator that would accept a string and calculate the sum by parsing out the valid numbers from the string. Each requirement of the project built upon existing requirements so unit tests were essential to ensure existing functionality worked while new features were added. This project was a great example of why having solid unit tests are crucial for building robust software that will scale.',
     tags: ['C#', 'NUnit', 'TDD', 'Unit Testing']
   },
   {
-    name: 'Events App (In Development)',
-    img: { src: 'img/react-firebase.png', height: 200, width: 400 },
+    title: 'Events App (In Development)',
+    img: { src: 'img/react-firebase.png', height: 200, width: 300 },
     links: ['https://github.com/blenz/events-app'],
     body:
       'This project uses React, Redux, Firebase, and Google Maps API to offer users a place where they can create, view, comment, and join other events they are interested in. The goal of this project was to increase my skills with React / Redux, CI / CD, and Kubernetes.',
@@ -24,7 +24,7 @@ const projects = [
     ]
   },
   {
-    name: 'Dating App',
+    title: 'Dating App',
     img: { src: 'img/angular.png', height: 200, width: 200 },
     links: [
       'https://dating-app.brettlenz.com/',
@@ -35,7 +35,7 @@ const projects = [
     tags: ['.NET Core', 'MySQL', 'AngularJs', 'Kubernetes', 'CI/CD', 'CircleCI']
   },
   {
-    name: 'Ecommerce Website',
+    title: 'Ecommerce Website',
     img: { src: 'img/ecommerce.png', height: 200, width: 270 },
     links: ['https://github.com/blenz/eCommerce-WebApp'],
     body:
@@ -43,7 +43,7 @@ const projects = [
     tags: ['PHP', 'MySQL', 'JavaScript', 'AJAX', 'HTML / CSS']
   },
   {
-    name: 'Missile Defense',
+    title: 'Missile Defense',
     img: { src: 'img/missile-defense.png', height: 200, width: 350 },
     links: [],
     body:
@@ -51,7 +51,7 @@ const projects = [
     tags: ['Corona SDK', 'Lua']
   },
   {
-    name: 'Fabflix',
+    title: 'Fabflix',
     img: { src: 'img/movies-logo.jpg', height: 200, width: 180 },
     links: [],
     body:
@@ -59,7 +59,7 @@ const projects = [
     tags: ['PHP', 'MySQL', 'JavaScript', 'AJAX', 'HTML / CSS']
   },
   {
-    name: 'YouTube Downloader',
+    title: 'YouTube Downloader',
     img: { src: 'img/YTDL.JPG', height: 200, width: 400 },
     links: ['https://github.com/blenz/YouTube-Downloader'],
     body:
@@ -67,7 +67,7 @@ const projects = [
     tags: ['C#', 'GitHub API']
   },
   {
-    name: 'Operating Systems',
+    title: 'Operating Systems',
     img: { src: 'img/simulation.png', height: 200, width: 400 },
     links: ['https://github.com/blenz/Operating-System-Projects'],
     body:
@@ -75,7 +75,7 @@ const projects = [
     tags: ['Java', 'OOP']
   },
   {
-    name: 'Tip Calculator',
+    title: 'Tip Calculator',
     img: { src: 'img/tip-calc.png', height: 200, width: 140 },
     links: [],
     body:
@@ -86,32 +86,31 @@ const projects = [
 
 // list the projects
 projects.forEach((p, i) => {
-  if (i % 2 === 0) $('#projects').append("<div class='row'></div>");
-
-  $('#projects > div.row:last-child').append(
-    `<div class="col-sm-12 col-lg-6">
-        <h3>${p.name}</h3>
-        <img 
-          src="${p.img.src}"
-          height="${p.img.height}"
-          width="${p.img.width}"
-        >
-        <p class="text-muted">
-          ${p.body}
-        </p>
-        ${p.tags
-          .map(t => `<span class="label label-info">${t}</span>`)
+  $('#projects').append(
+    `<div class="ui card">
+    	<div class="image" style="background-size: contain">
+      		<img src="${p.img.src}"/>
+    	</div>
+    	<div class="content">
+			<div class="ui large header">${p.title}</div>
+			<div class="description">
+				${p.body}
+			</div>
+			<button class="ui left attached button black">Github</>
+			<button class="right attached ui button green">Deployed</button>
+    	</div>
+		<div class="extra content">
+			<div class="center aligned author">
+				${p.tags
+          .map(
+            t =>
+              `<span class="ui blue label align top" style="margin: 2px">
+					${t}
+				</span>`
+          )
           .join('\n')}
-          <br/>
-          <br/>
-        ${p.links.map(link => {
-          let isGithub = link.includes('github.com');
-          return `<a class='btn btn-${
-            isGithub ? 'primary' : 'success'
-          }' href='${link}'>${
-            isGithub ? 'Github' : 'Deployed'
-          }  <i class='glyphicon glyphicon-new-window'></i></a>`;
-        })}
-      </div>`
+			</div>
+		</div>
+  	</div>`
   );
 });
