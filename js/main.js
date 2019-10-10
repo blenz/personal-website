@@ -88,18 +88,16 @@ const projects = [
 projects.forEach((p, i) => {
   $('#projects').append(
     `<div class="ui card">
-    	<div class="image" style="background-size: contain">
-      		<img src="${p.img.src}"/>
-    	</div>
+		<div class="blurring dimmable image centered">
+			<div class="image" style="background-image:url('${p.img.src}');"/>
+      	</div>
     	<div class="content">
 			<div class="ui large header">${p.title}</div>
 			<div class="description">
 				${p.body}
 			</div>
-			<button class="ui left attached button black">Github</>
-			<button class="right attached ui button green">Deployed</button>
-    	</div>
-		<div class="extra content">
+		</div>
+		<div class="extra">
 			<div class="center aligned author">
 				${p.tags
           .map(

@@ -1,0 +1,12 @@
+.image {
+  height: 300px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+div.content {
+  height: 200px;
+  background-color: gray;
+}
