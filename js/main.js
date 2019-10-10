@@ -91,7 +91,7 @@ projects.forEach((p, i) => {
 		<div class="blurring dimmable image centered">
 			<div class="image" style="background-image:url('${p.img.src}');"/>
       	</div>
-    	<div class="content">
+		<div class="content">
 			<div class="ui large header">${p.title}</div>
 			<div class="description">
 				${p.body}
