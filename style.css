@@ -34,8 +34,7 @@ a:hover {
   color: white;
 }
 
-.card .image,
-.card .extra {
+.card .image {
   background-color: gainsboro !important;
 }
 
