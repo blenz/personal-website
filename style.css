@@ -1,0 +1,53 @@
+body {
+  background-color: Gainsboro !important;
+}
+
+.masthead {
+  background: url(img/space-header.jpg) top center no-repeat;
+  height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.masthead .header {
+  font-size: 100px !important;
+  text-shadow: -1px 0 black, 0 2px black;
+}
+
+.image {
+  height: 300px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+div.content {
+  height: 200px;
+  background-color: gray;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.card .image,
+.card .extra {
+  background-color: whitesmoke !important;
+}
+
+p,
+.card .description {
+  font-size: 15px;
+}
+
+.headline {
+  font-size: 17px;
+}
+
+.contact {
+  margin: 40px 250px;
+}
