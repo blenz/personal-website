@@ -1,11 +1,11 @@
 body {
-  background-color: Gainsboro !important;
+  background-color: lightgrey !important;
 }
 
 .masthead {
   background: url(img/space-header.jpg) top center no-repeat;
+  background-size: cover;
   height: 400px;
-  position: relative;
   display: flex;
   align-items: center;
 }
@@ -23,9 +23,9 @@ body {
   background-color: white;
 }
 
-div.content {
+.content {
   height: 200px;
-  background-color: gray;
+  background-color: whitesmoke !important;
 }
 
 a,
@@ -36,7 +36,7 @@ a:hover {
 
 .card .image,
 .card .extra {
-  background-color: whitesmoke !important;
+  background-color: gainsboro !important;
 }
 
 p,
@@ -49,5 +49,5 @@ p,
 }
 
 .contact {
-  margin: 40px 250px;
+  margin: 40px 30%;
 }
