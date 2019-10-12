@@ -6,13 +6,12 @@ body {
   background: url(img/space-header.jpg) top center no-repeat;
   background-size: cover;
   height: 400px;
-  display: flex;
-  align-items: center;
 }
 
 .masthead .header {
   font-size: 100px !important;
   text-shadow: -1px 0 black, 0 2px black;
+  padding-top: 100px;
 }
 
 .image {
@@ -24,7 +23,10 @@ body {
 }
 
 .content {
-  height: 200px;
+  min-height: 150px;
+}
+
+.extra {
   background-color: whitesmoke !important;
 }
 
