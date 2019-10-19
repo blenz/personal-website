@@ -1,6 +1,6 @@
 const projects = [
   {
-    title: 'TTD Project',
+    title: 'TDD Project',
     img: { src: 'img/tdd-calculator.png' },
     links: { github: 'https://github.com/blenz/TDDCalculator' },
     body:
@@ -104,8 +104,8 @@ projects.forEach((p, i) => {
           Github
         </div>
       </a>`
-			: ''
-		}
+      : ''
+    }
 
 		${p.links.deployed ?
       `<a href="${p.links.deployed}">
@@ -114,18 +114,18 @@ projects.forEach((p, i) => {
           Deployed
         </div>
       </a>`
-			: ''
-		}
+      : ''
+    }
 		<div class="extra">
 			<div class="center aligned">
 				${p.tags
-          .map(
-            t =>
-              `<span class="ui blue label" style="margin: 2px">
+      .map(
+        t =>
+          `<span class="ui blue label" style="margin: 2px">
 					${t}
 				</span>`
-          )
-          .join('\n')}
+      )
+      .join('\n')}
 			</div>
 		</div>
   	</div>`
