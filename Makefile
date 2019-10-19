@@ -1,7 +1,7 @@
 PROJECT_NAME= personal-website
 DOCKER_PROJECT_NAME= ${DOCKER_USERNAME}/$(PROJECT_NAME)
 
-HASH=$(shell find ./ -type f | xargs cat | shasum | cut -c 1-10 )
+HASH=$(shell find . -type f | xargs cat | shasum | cut -c 1-10 )
 
 deploy:
 	docker build \
