@@ -17,4 +17,3 @@ deploy:
 		$(PROJECT_NAME)=$(DOCKER_PROJECT_NAME):$(HASH)
 	
 	kubectl rollout status deployments $(PROJECT_NAME)
-	
