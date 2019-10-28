@@ -1,5 +1,13 @@
 const projects = [
   {
+    title: 'Weather Checker',
+    img: { src: 'img/weather.png' },
+    links: { github: 'https://github.com/blenz/WeatherApp', deployed: 'https://weather-app.brettlenz.com' },
+    body:
+      'This project allows the user to input an address using Google Place\'s Autocomplete and it will fetch weather information from OpenWeather API. Additionally, it utilizes Redis to cache results and it will display whether the search was pulled from cache or not.',
+    tags: ['C#', 'Redis', 'OpenWeather API', 'Google Places API', 'Postgres']
+  },
+  {
     title: 'TDD Project',
     img: { src: 'img/tdd-calculator.png' },
     links: { github: 'https://github.com/blenz/TDDCalculator' },
@@ -26,7 +34,7 @@ const projects = [
     title: 'Dating App',
     img: { src: 'img/angular.png' },
     links: {
-      deployed: 'https://dating-app.brettlenz.com/',
+      deployed: 'https://dating-app.brettlenz.com',
       github: 'https://github.com/blenz/dating-app'
     },
     body:
