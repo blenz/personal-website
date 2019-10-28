@@ -5,7 +5,7 @@ const projects = [
     links: { github: 'https://github.com/blenz/WeatherApp', deployed: 'https://weather-app.brettlenz.com' },
     body:
       'This project allows the user to input an address using Google Place\'s Autocomplete and it will fetch weather information from OpenWeather API. Additionally, it utilizes Redis to cache results and it will display whether the search was pulled from cache or not.',
-    tags: ['C#', 'Redis', 'OpenWeather API', 'Google Places API', 'Postgres']
+    tags: ['.NET Core', 'React', 'Redis', 'OpenWeather API', 'Google Places API', 'Postgres']
   },
   {
     title: 'TDD Project',
