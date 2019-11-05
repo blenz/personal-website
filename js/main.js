@@ -8,7 +8,7 @@ const projects = [
     tags: ['.NET Core', 'React', 'Redis', 'OpenWeather API', 'Google Places API', 'Postgres']
   },
   {
-    title: 'TDD Project',
+    title: 'C# Unit Testing Project',
     img: { src: 'img/tdd-calculator.png' },
     links: { github: 'https://github.com/blenz/TDDCalculator' },
     body:
